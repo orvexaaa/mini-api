@@ -9,3 +9,8 @@ def home():
         "version" : "1.0.0",
         "status" : "success"
     }
+
+tasks = [
+    {'id': 1 , "title": "Belajar Python", "completed": False},
+    {'id': 2 , "title": "Membuat Mini API", "completed": False}
+]
