@@ -14,3 +14,10 @@ tasks = [
     {'id': 1 , "title": "Belajar Python", "completed": False},
     {'id': 2 , "title": "Membuat Mini API", "completed": False}
 ]
+
+@app.get("/tasks")
+def get_tasks():
+    return {
+        "total": len(tasks),
+        "data": tasks
+    }
